@@ -1,0 +1,4 @@
+No syntax errors detected in /mnt/data/RentEasy_SL_CODE_ONLY/app/bootstrap.php
+No syntax errors detected in /mnt/data/RentEasy_SL_CODE_ONLY/database/seed_demo.php
+No syntax errors detected in /mnt/data/RentEasy_SL_CODE_ONLY/config/config.php
+No syntax errors detected in /mnt/data/RentEasy_SL_CODE_ONLY/public/index.php

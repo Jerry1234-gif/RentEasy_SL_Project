@@ -1,0 +1,11 @@
+RentEasy SL source package
+- app/bootstrap.php
+- config/config.php
+- database/schema.sql
+- database/seed_demo.php
+- public/index.php
+- public/assets/css/style.css
+- public/assets/brand/*
+- public/uploads/properties/.gitkeep
+- .htaccess
+- START_HERE.txt

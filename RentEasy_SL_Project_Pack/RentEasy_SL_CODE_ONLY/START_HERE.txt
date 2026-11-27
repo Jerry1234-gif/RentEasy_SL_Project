@@ -1,0 +1,46 @@
+RENTEASY SL — PHP + MYSQL SOURCE CODE
+====================================
+This is the CODE-ONLY package. Open the folders app, config, database and public to see the actual PHP and SQL source files.
+
+REQUIREMENTS
+- XAMPP with PHP 8.0+ and MySQL/MariaDB
+- A web browser
+
+INSTALL ON WINDOWS / XAMPP
+1. Extract the folder RentEasy_SL_CODE_ONLY into C:\xampp\htdocs\
+2. Open XAMPP Control Panel. Start Apache and MySQL.
+3. Open http://localhost/phpmyadmin
+4. Create a database named renteasy_sl (collation utf8mb4_unicode_ci).
+5. Select renteasy_sl, choose Import, and import:
+   C:\xampp\htdocs\RentEasy_SL_CODE_ONLY\database\schema.sql
+6. Open this URL ONCE to create fictional demo accounts:
+   http://localhost/RentEasy_SL_CODE_ONLY/database/seed_demo.php
+7. Open the application:
+   http://localhost/RentEasy_SL_CODE_ONLY/public/
+
+DEMO ACCOUNTS (all use ChangeMe123!)
+Administrator: admin@renteasy.test
+Landlord:      landlord@renteasy.test
+Tenant:        tenant@renteasy.test
+Agent:         agent@renteasy.test
+
+IMPORTANT
+- Demo accounts and sample property data are fictional.
+- Change demo passwords before sharing or deploying the system.
+- Delete or restrict database/seed_demo.php after seeding.
+- schema.sql drops and recreates RentEasy tables. Import only into a new/empty project database. It can erase existing RentEasy data.
+- This is an academic MVP, not a production-ready rental service.
+- This project does not process rent payments or verify legal property ownership.
+
+SOURCE FILE MAP
+app/bootstrap.php              Session, database connection, security helpers
+config/config.php               Local database and upload configuration
+database/schema.sql             MySQL database structure
+database/seed_demo.php          Fictional demo accounts and listing
+public/index.php                 Main PHP application and request handlers
+public/assets/css/style.css     Responsive visual styling
+public/assets/brand/             RentEasy logo files
+public/uploads/properties/       Uploaded property images
+
+IF THE FOLDER NAME CHANGES
+The default config uses base_url='' and should work when opening the public folder as shown above. If you move the public entry point or deploy under another URL path, adjust base_url in config/config.php accordingly.
